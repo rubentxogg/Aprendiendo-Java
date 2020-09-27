@@ -1,3 +1,3 @@
 #Curso de Java realizado en Udemy.
 
-![Logo Java](c/Users/Rubentxo/Desktop/Clases Internet/Aprendiendo Java - Ashutosh Pawar)
+![Logo Java](https://ejemplocodigo.com/wp-content/uploads/2016/07/logo-java-BIG.jpg)
