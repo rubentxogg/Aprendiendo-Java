@@ -1,0 +1,19 @@
+
+String username="admin";
+String password="adminuser";
+String entered_username;
+String entered_password;
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter username");
+entered_username = sc.next();
+if(username.equals(entered_username)){
+   System.out.println("Enter the password");
+   entered_password = sc.next();
+   if(password.equals(entered_password)){
+       System.out.println("Successfully logged in");
+   }else{
+       System.out.println("Incorrect password");
+   }
+}else{
+   System.out.println("Invalid username");
+}

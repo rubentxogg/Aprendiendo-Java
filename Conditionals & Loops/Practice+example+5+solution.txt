@@ -1,0 +1,14 @@
+int ticket_price[] ={100,150,500,20};
+int discounted_price[] = new int[ticket_price.length];
+int new_price;
+Scanner sc = new Scanner(System.in);
+int discount = sc.nextInt();
+
+for(int i=0;i<ticket_price.length;i++){
+    new_price = (ticket_price[i] - (ticket_price[i] * discount)/100);
+    discounted_price[i] = new_price;
+}
+
+for(int j=0;j<discounted_price.length;j++){
+   System.out.println(discounted_price[j]);
+}

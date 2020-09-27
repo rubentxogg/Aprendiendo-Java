@@ -1,0 +1,27 @@
+Exception: Create an exception class named InvalidUserIdException.
+
+public class InvalidUserIdException extends Exception {
+
+   @Override
+   public String toString() {
+       return ("Invalid user id entered");
+   }
+}
+
+Main.java
+public static void main(String[] args) {
+
+   Scanner sc = new Scanner(System.in);
+   int user_id=sc.nextInt();
+
+   try{
+       if (user_id!=1234){
+           throw new InvalidUserIdException();
+       }
+
+   }catch (Exception e){
+       System.out.println(e);
+   }
+
+
+}

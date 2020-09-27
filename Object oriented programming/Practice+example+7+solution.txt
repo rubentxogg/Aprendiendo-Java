@@ -1,0 +1,20 @@
+public class Programmer {
+   String name;
+   int id;
+   int salary;
+
+   Programmer(){
+       name="John";
+       id=1;
+       salary=1000;
+   }
+}
+
+
+Programmer p = new Programmer();
+System.out.println(p.id+" "+p.name+" "+p.salary );
+//changing the default values of attributes
+p.name="Rob";
+p.id=10;
+p.salary=2000;
+System.out.println(p.id+" "+p.name+" "+p.salary );

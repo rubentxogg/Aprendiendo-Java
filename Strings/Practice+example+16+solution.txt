@@ -1,0 +1,24 @@
+1.
+String s ="The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog";
+String s1= s.replace("fox","frog");
+System.out.println(s1);
+
+
+2. 
+String s ="The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog";
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the replacement word");
+String replacement=sc.next();
+String s1= s.replace("fox",replacement);
+System.out.println(s1);
+
+3.
+String s ="The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog";
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the word you want to replace");
+String target= sc.next();
+System.out.println("Enter the replacement word");
+String replacement=sc.next();
+
+String s1= s.replace(target,replacement);
+System.out.println(s1);

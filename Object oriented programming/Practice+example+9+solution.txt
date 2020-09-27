@@ -1,0 +1,55 @@
+public class Employee {
+   int employee_id;
+   String name;
+   int age;
+
+   public void setData(){
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter employee id");
+       this.employee_id = sc.nextInt();
+       System.out.println("Enter employee Name");
+       this.name = sc.next();
+       System.out.println("Enter employee age");
+       this.age = sc.nextInt();
+
+   }
+
+   public void getData(){
+       System.out.println(this.employee_id+" "+this.name+" "+this.age);
+   }
+}
+
+
+
+//in main.java
+
+
+Employee e = new Employee();
+e.setData();
+e.getData();
+
+
+//Tech.java
+public class Tech extends Employee {
+
+
+   int hours_worked;
+   int hourly_rate;
+
+   public void getSalary(){
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter hourly rate");
+       this.hourly_rate = sc.nextInt();
+       System.out.println("Enter hours worked");
+       this.hours_worked = sc.nextInt();
+       System.out.println("Salary: "+hours_worked*hourly_rate);
+
+   }
+
+-- now lets create the tech object and see if it works
+Tech t = new Tech();
+t.setData();
+t.getSalary();
+t.getData();
+
+// For Hr.java & design.java reuse the same code as above, just change the formula for calculation of salary

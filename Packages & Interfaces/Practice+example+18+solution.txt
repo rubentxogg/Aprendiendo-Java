@@ -1,0 +1,55 @@
+Create an interface named BankRules
+Create a file named BankRules.java
+package com.company;
+
+interface BankRules{
+
+
+   void interest_paid();
+
+}
+
+
+Create a new class called private bank
+public class Privatebank {
+
+   String customer_name;
+
+   Privatebank(String customer_name){
+       this.customer_name = customer_name;
+
+   }
+ }
+}
+
+
+Create a new class called government bank
+public class Govtbank implements BankRules {
+
+   String customer_name;
+
+   Govtbank(String customer_name){
+       this.customer_name = customer_name;
+
+   }
+  }
+
+
+Make both class implement BankRules
+Add the interest_paid methods to them
+
+For private bank
+public void interest_paid() {
+   System.out.println(this.customer_name +"is paid an interest of 5%");
+}
+
+For government bank
+public void interest_paid() {
+   System.out.println(this.customer_name+" is paid an interest of 7%");
+}
+Now create the objects in the main class for both private bank and government bank customer:
+Privatebank pb = new Privatebank("John");
+pb.interest_paid();
+
+Govtbank gb = new Govtbank("Rob");
+gb.interest_paid();

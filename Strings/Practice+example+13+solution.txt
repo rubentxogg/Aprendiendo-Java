@@ -1,0 +1,20 @@
+public static void main(String[] args) throws IOException {
+ Scanner sc = new Scanner(System.in);
+   System.out.println("Enter username");
+   String username =sc.next();
+   System.out.println("Enter password");
+   String password = sc.next();
+
+   if(username.length()<6){
+       System.out.println("Invalid Username, should be at least 6 characters long");
+
+   }else if(password.length()<8){
+       System.out.println("Invalid password, should be at least 8 characters long ");
+
+   }else {
+       System.out.println("Valid username and password!");
+   }
+
+
+
+}

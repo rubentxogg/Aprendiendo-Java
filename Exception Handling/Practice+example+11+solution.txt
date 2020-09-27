@@ -1,0 +1,40 @@
+public static void main(String[] args) {
+   int current_balance = 1000;
+   Scanner sc = new Scanner(System.in);
+   int deposit_amount=sc.nextInt();
+
+  current_balance+=deposit_amount;
+  System.out.println("Updated balance is: "+current_balance);
+
+
+}
+
+
+create an exception
+public class NegativeNotAllowedException extends Exception {
+
+   @Override
+   public String toString() {
+       return ("Negative amount is not allowed!");
+   }
+}
+
+
+create a try catch in main.java
+int current_balance = 1000;
+Scanner sc = new Scanner(System.in);
+int deposit_amount=sc.nextInt();
+
+try{
+   if(deposit_amount<0){
+       throw new NegativeNotAllowedException();
+   }else{
+       current_balance+=deposit_amount;
+       System.out.println("Updated balance is: "+current_balance);
+
+   }
+}catch (Exception e){
+   System.out.println(e);
+}
+
+

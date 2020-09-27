@@ -1,0 +1,10 @@
+System.out.println("Enter a number");
+Scanner sc= new Scanner(System.in);
+int num= sc.nextInt();
+for(int i=1;i<11;i++){
+   System.out.println(i*num);
+}
+
+
+Enhancement: Change the output to the format like 2 1’s are 2, 2 2’s are 4
+System.out.println(num+" "+ i+"'s are "+ num*i);

@@ -1,0 +1,16 @@
+String s = "Exercise is the best way to keep your mind and body healthy.";
+int count = 0;
+for(int i=0;i<s.length();i++){
+   if(s.charAt(i)=='a'){
+       count++;
+   }
+}
+System.out.println(count);
+
+
+
+2nd change:
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter a string/sentence");
+String s = sc.nextLine();
+

@@ -1,0 +1,10 @@
+int marks;
+System.out.println("Enter your marks");
+Scanner sc = new Scanner(System.in);
+marks = sc.nextInt();
+
+if(marks>=35){
+   System.out.println("You passed");
+}else{
+   System.out.println("You failed");
+}

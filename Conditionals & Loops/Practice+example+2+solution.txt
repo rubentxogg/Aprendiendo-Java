@@ -1,0 +1,21 @@
+int age;
+ int x;
+ double height;
+ Scanner sc = new Scanner(System.in);
+ System.out.println("Enter age");
+ age = sc.nextInt();
+ System.out.println("Enter height in cms");
+ height = sc.nextDouble();
+
+ x = 16 - age;
+ if(age>16){
+    if(height>167){
+        System.out.println("You are qualified to play");
+    }else{
+        System.out.println("You are not qualified to play");
+    }
+ }else{
+     System.out.println("You are not qualified as of now, come back after " + x + " years" );
+ }
+
+}
